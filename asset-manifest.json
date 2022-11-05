@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shoolus-web/static/css/main.e6c13ad2.css",
+    "main.js": "/shoolus-web/static/js/main.ca70670e.js",
+    "static/js/787.37e65d61.chunk.js": "/shoolus-web/static/js/787.37e65d61.chunk.js",
+    "index.html": "/shoolus-web/index.html",
+    "main.e6c13ad2.css.map": "/shoolus-web/static/css/main.e6c13ad2.css.map",
+    "main.ca70670e.js.map": "/shoolus-web/static/js/main.ca70670e.js.map",
+    "787.37e65d61.chunk.js.map": "/shoolus-web/static/js/787.37e65d61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ca70670e.js"
+  ]
+}
