@@ -18,8 +18,10 @@ export const App: FC = () => {
         <Button appearance="primary" data-testid="click-me-button">
           Click me!
         </Button>
-        <Text>This is a clickable Button</Text>
-        <Pane>
+
+        <Text marginLeft={20}>This is a clickable Button</Text>
+
+        <Pane margin={20}>
           <Avatar name="Steve Jobs" size={40} marginRight={16} />
           <Avatar name="Bill Gates" size={40} marginRight={16} />
           <Avatar name="Elon Musk" size={40} marginRight={16} />
