@@ -1,5 +1,5 @@
 const colors = {
-  white: '#ffffff',
-  dark: '#070D17',
+  primarygreen: '#ffffff',
+  gray: '#f7f7f7',
 }
 export default colors

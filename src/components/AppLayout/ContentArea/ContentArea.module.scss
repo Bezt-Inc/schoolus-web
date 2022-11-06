@@ -1,0 +1,8 @@
+@import "styles/variables";
+.contentArea{
+    flex: 1;
+    padding: 3rem;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: $white;
+}

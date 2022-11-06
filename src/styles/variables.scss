@@ -1,0 +1,21 @@
+$white: #ffffff;
+$color-primary-green: #12b07b;
+$color-gray: #f7f7f7;
+$color-gray-dark: #3d3f47;
+$color-red: #ff5647;
+
+$grid-breakpoint-xs: 0;
+$grid-breakpoint-sm: 576px;
+$grid-breakpoint-md: 768px;
+$grid-breakpoint-lg: 992px;
+$grid-breakpoint-xl: 1200px;
+$grid-breakpoint-xxl: 1400px;
+
+$grid-breakpoints: (
+  xs: $grid-breakpoint-xs,
+  sm: $grid-breakpoint-sm,
+  md: $grid-breakpoint-md,
+  lg: $grid-breakpoint-lg,
+  xl: $grid-breakpoint-xl,
+  xxl: $grid-breakpoint-xxl,
+);
