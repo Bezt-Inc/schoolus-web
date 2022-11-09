@@ -14,8 +14,6 @@ export const MenuItem: FC<Props> = ({
   isActive,
   onClick,
 }) => {
-  console.log('active?', isActive, routerUrl)
-
   return (
     <Link
       to={routerUrl !== undefined ? routerUrl : ''}
@@ -28,9 +26,7 @@ export const MenuItem: FC<Props> = ({
       <Pane className={classes(style.iconBox, isActive && style.iconBoxActive)}>
         <Icon />
       </Pane>
-      <Text color="inherit" marginLeft={10}>
-        {name}
-      </Text>
+      <Text className={classes(style.menuText)}>{name}</Text>
     </Link>
   )
 }
