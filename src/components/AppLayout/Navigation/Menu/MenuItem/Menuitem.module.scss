@@ -1,0 +1,64 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.menuItem {
+  padding: 13px 0 13px 40px;
+  display: flex;
+  align-items: center;
+  transition: all .2s ease-in-out;
+
+
+  .menuText {
+    margin-left: 10px;
+    font-size: 15px;
+    color: inherit;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+  }
+
+  &.linkDefault {
+    color: $color-gray-light;
+  }
+  &.linkActive {
+    color: $color-primary-green;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 6px;
+      height: 100%;
+      position: absolute;
+      background-color: $color-primary-green;
+      top: 0;
+      right: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+}
+
+
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 3px;
+  border-radius: 5px;
+
+  &.iconBoxActive {
+    background-color: $color-primary-green;
+    color: $white;
+  }
+}
+
+@include xs-breakpoint {
+  .menuItem {
+    padding: 13px 0 13px 20px;
+  }
+  .menuText {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

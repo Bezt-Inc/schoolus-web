@@ -1,14 +1,18 @@
 import { Logo } from 'components/Logo/Logo'
-import { Pane } from 'evergreen-ui'
+import useSchoolusNavigation from 'hooks/useSchoolusNavigation'
 import { FC } from 'react'
+import { Logout } from './Logout/Logout'
+import { Menu } from './Menu/Menu'
 import style from './Navigation.module.scss'
 
 export const Navigation: FC = () => {
+  const { activeMenuItem } = useSchoolusNavigation()
+
   return (
     <nav className={style.navigation}>
-      <Pane display="flex" justifyContent="center">
-        <Logo />
-      </Pane>
+      <Logo />
+      <Menu activeMenuItem={activeMenuItem} />
+      <Logout />
     </nav>
   )
 }
