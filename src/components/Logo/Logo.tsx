@@ -7,7 +7,7 @@ export const Logo: FC = () => {
   return (
     <Pane display="flex" flexDirection="column" alignItems="center">
       <img className={style.logo} src={SchoolusLogo} alt="" />
-      <Text fontWeight="bold">SCHOOLUS</Text>
+      <Text className={style.logoText}>SCHOOLUS</Text>
     </Pane>
   )
 }

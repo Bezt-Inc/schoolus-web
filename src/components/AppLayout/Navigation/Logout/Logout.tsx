@@ -1,6 +1,6 @@
 import { Pane } from 'evergreen-ui'
 import { FC } from 'react'
-import { TbNotes } from 'react-icons/tb'
+import { TbLogout } from 'react-icons/tb'
 import { MenuItem } from '../Menu/MenuItem/MenuItem'
 
 export const Logout: FC = () => {
@@ -8,7 +8,7 @@ export const Logout: FC = () => {
   return (
     <Pane>
       <MenuItem
-        item={{ Icon: TbNotes, name: 'Logout' }}
+        item={{ Icon: TbLogout, name: 'Logout' }}
         isActive={false}
         onClick={handleLogout}
       />

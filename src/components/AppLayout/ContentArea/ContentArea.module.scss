@@ -1,8 +1,16 @@
 @import "styles/variables";
+@import 'styles/breakpoints';
+
 .contentArea{
     flex: 1;
     padding: 3rem;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
     background-color: $white;
+}
+
+@include xs-breakpoint {
+    .contentArea{
+        border-radius:unset;
+    }
 }
