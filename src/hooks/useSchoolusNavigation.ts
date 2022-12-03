@@ -10,8 +10,10 @@ type useSchoolusNavigationT = () => {
 const useSchoolusNavigation: useSchoolusNavigationT = () => {
   const { pathname } = useLocation()
 
+  console.log('pathname', pathname)
+
   const activeMenuItem = useMemo(
-    () => sidebarMenu.find(item => pathname === item.routerUrl),
+    () => sidebarMenu.find(item => pathname === `/admin/${item.key}`),
     [pathname],
   )
 
