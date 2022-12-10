@@ -1,0 +1,28 @@
+@import 'styles/variables';
+
+.inputContainer {
+    border: solid 1px $color-gray-light;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputControl {
+  border: none;
+  flex: 1;
+
+  &::placeholder{
+    color: $color-gray-light;
+    font-size: 13px;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+.inputControl:hover, .inputControl:active{
+    border: none;
+    outline: none;
+}

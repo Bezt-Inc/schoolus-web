@@ -1,3 +1,4 @@
+import SearchInput from 'components/SearchInput/SearchInput'
 import { Pane } from 'evergreen-ui'
 import { FC } from 'react'
 import Profile from './Profile'
@@ -9,7 +10,9 @@ const Statistics: FC = () => {
       <Pane className={style.main}>
         <Profile />
       </Pane>
-      <Pane className={style.aside}>aside</Pane>
+      <Pane className={style.aside}>
+        <SearchInput />
+      </Pane>
     </Pane>
   )
 }
